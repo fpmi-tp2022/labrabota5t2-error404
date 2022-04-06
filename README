@@ -19,9 +19,9 @@
 ```
 ## Сведения об авторах проекта и какие задачи реализовывали.
 ```sh
-Нестюкович Яна: db_authorization.c, main.c, db_select.c и соответствующие файлы заголовков
-Рудой Андрей: db_functions.c, db_update_operations.c и соответствующие файлы заголовков
-Радюк Арина: db_delete_operations.c, db_insert_operations.c и соответствующие файлы заголовков
+Нестюкович Яна: Autorization.c, main.c, SelectOperation.c и соответствующие файлы заголовков
+Рудой Андрей: FunctionChecker.c, UpdateOperation.c и соответствующие файлы заголовков
+Радюк Арина: DeleteOperation.c, InsertOperation.c и соответствующие файлы заголовков
 ```
 
 
