@@ -1,0 +1,3 @@
+﻿  main.c
+LINK : warning LNK4067: неоднозначная точка входа; выбрана "mainCRTStartup"
+  ProjectMM.vcxproj -> C:\Users\37529\Downloads\ProjectMM\Debug\ProjectMM.exe
