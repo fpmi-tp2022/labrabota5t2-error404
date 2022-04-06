@@ -1,0 +1,21 @@
+﻿  Autorization.c
+  DeleteOperation.c
+D:\ProjectMM\ProjectMM\DeleteOperation.c(13,21): warning C4013: atoi: нет определения; предполагается "extern" с возвратом типа "int"
+D:\ProjectMM\ProjectMM\DeleteOperation.c(112,21): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+D:\ProjectMM\ProjectMM\DeleteOperation.c(112,42): warning C4312: приведение типов: преобразование из "int" в "int *" большего размера
+  FunctionChecker.c
+D:\ProjectMM\ProjectMM\FunctionChecker.c(9,15): warning C4013: atoi: нет определения; предполагается "extern" с возвратом типа "int"
+D:\ProjectMM\ProjectMM\FunctionChecker.c(15,27): warning C4013: number_of_sold: нет определения; предполагается "extern" с возвратом типа "int"
+D:\ProjectMM\ProjectMM\FunctionChecker.c(16,39): warning C4013: number_of_applicants: нет определения; предполагается "extern" с возвратом типа "int"
+  InsertOperation.c
+D:\ProjectMM\ProjectMM\InsertOperation.c(42,23): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+D:\ProjectMM\ProjectMM\InsertOperation.c(42,27): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\ProjectMM\ProjectMM\InsertOperation.c(44,30): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+D:\ProjectMM\ProjectMM\InsertOperation.c(46,26): warning C4047: =: "char *" отличается по уровням косвенного обращения от "int"
+  SelectOperation.c
+  UpdateOperation.c
+D:\ProjectMM\ProjectMM\UpdateOperation.c(9,15): warning C4013: atoi: нет определения; предполагается "extern" с возвратом типа "int"
+  main.c
+  shell.c
+  Создание кода...
+  ProjectMM.vcxproj -> D:\ProjectMM\x64\Debug\ProjectMM.exe
