@@ -1,10 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "includes/Autorization.h"
-#include "includes/FunctionChecker.h"
+#include "../includes/Autorization.h"
+#include "../includes/FunctionChecker.h"
 #include <string.h>
 #include "sqlite3.h"
-
+#include <stdlib.h>
 /*
 * adds user to USERS table.
 */

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "includes/Autorization.h"
+#include "../includes/Autorization.h"
 #include "sqlite3.h"
 
 int callback_login(void *data, int argc, char **argv, char **azColName) {

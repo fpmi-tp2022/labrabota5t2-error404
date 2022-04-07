@@ -1,14 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "includes/DeleteOperation.h"
-#include "includes/Autorization.h"
+#include "../includes/DeleteOperation.h"
+#include "../includes/Autorization.h"
 #include <string.h>
 #include "sqlite3.h"
-
+#include <stdlib.h>
 int* mass;
-int index = 0;
 
 int callback_id_operation(void *data, int argc, char **argv, char **azColName) {
+	int index = 0;
 	for (int i = 0; i < argc; i++) {
 		mass[index] = atoi(argv[i]);
 		index++;
@@ -17,6 +17,7 @@ int callback_id_operation(void *data, int argc, char **argv, char **azColName) {
 }
 
 int callback_count(void *data, int argc, char **argv, char **azColName) {
+	int index = 0;
 	int * count = (int*)data;
 	*count = atoi(argv[0]);
 	return 0;
@@ -90,7 +91,7 @@ int delete_last_record(char db_name[256]) {
 */
 
 int delete_compact_disk(char db_name[256]) {
-	index = 0;
+	int index = 0;
 	sqlite3 *db;
 	char *zErrMsg = 0;
 	int rc;

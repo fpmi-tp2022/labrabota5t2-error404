@@ -1,12 +1,11 @@
-//»спользу€ оператор Select, выдать следующую информацию:
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "includes/Autorization.h"
+#include "../includes/Autorization.h"
 #include "sqlite3.h"
-#include "includes/SelectOperation.h"
+#include "../includes/SelectOperation.h"
 
 
 char **arrCharTwo;

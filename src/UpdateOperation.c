@@ -1,9 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "includes/Autorization.h"
-#include "includes/FunctionChecker.h"
+#include "../includes/Autorization.h"
+#include "../includes/FunctionChecker.h"
 #include <string.h>
 #include "sqlite3.h"
-
+#include <stdlib.h>
 int callback_code(void *data, int argc, char **argv, char **azColName) {
 	int * count = (int*)data;
 	*count = atoi(argv[0]);

@@ -1,28 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "includes/Autorization.h"
+#include "../includes/Autorization.h"
 #include <string.h>
 #include "sqlite3.h"
-
+#include <stdlib.h>
 int callback_sum(void *data, int argc, char **argv, char **azColName) {
 	int * count = (int*)data;
 	*count = atoi(argv[0]);
 	return 0;
-}
-
-
-int quantity_check(sqlite3 *db, char *zErrMsg, int rc, int new_quantity, int code) {
-	int sold = number_of_sold(db, zErrMsg, rc, code);
-	int applicants = number_of_applicants(db, zErrMsg, rc, code);
-
-	if (applicants - sold >= new_quantity) {
-		return 0;
-	}
-	else
-	{
-		return 1;
-	}
-
 }
 
 int number_of_sold(sqlite3 *db, char *zErrMsg, int rc, int code) {
@@ -50,3 +35,17 @@ int number_of_applicants(sqlite3 *db, char *zErrMsg, int rc, int code) {
 	}
 	return count;
 }
+int quantity_check(sqlite3 *db, char *zErrMsg, int rc, int new_quantity, int code) {
+	int sold = number_of_sold(db, zErrMsg, rc, code);
+	int applicants = number_of_applicants(db, zErrMsg, rc, code);
+
+	if (applicants - sold >= new_quantity) {
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+
+}
+

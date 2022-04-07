@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 #include "sqlite3.h"
-#include "includes/Autorization.h"
-#include "includes/DeleteOperation.h"
-#include "includes/UpdateOperation.h"
-#include "includes/SelectOperation.h"
-#include "includes/InsertOperation.h"
-
+#include "../includes/Autorization.h"
+#include "../includes/DeleteOperation.h"
+#include "../includes/UpdateOperation.h"
+#include "../includes/SelectOperation.h"
+#include "../includes/InsertOperation.h"
+#include <stdlib.h>
 char db_name[256] = "musicSalon.db";
 
 int main() {
